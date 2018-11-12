@@ -1,0 +1,72 @@
+.centering {
+    display: flex;
+    justify-content: center;
+}
+
+.centered {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cfTable {
+    width: 100%;
+}
+
+.cfTable > tbody > tr {
+    line-height: 40px;
+}
+
+.cfTable > tbody > tr:nth-child(even){
+    background-color: lightcoral;
+}
+
+.cfReceipts.cfTable > tbody > tr.dataRow :nth-child(3) {
+    text-align: right;
+    padding-right: 8%;
+}
+
+.cfReceipts.cfTable > tbody > tr > th {
+    width: 20%;
+}
+
+.cfReceipts.cfTable > tbody > tr > td {
+    width: 20%;
+    padding-left: 8%;
+}
+
+.cfArticles.cfTable > tbody > tr > th {
+    width: 25%;
+}
+
+.cfArticles.cfTable > tbody > tr > td {
+    width: 25%;
+    text-align: center;
+}
+
+.cfArticles.cfTable > tbody > tr > td > input {
+    width: 80%;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.cfArticles.cfTable > tbody > tr > td > input[type = number] {
+    text-align: right;
+}
+
+
+.newReceiptButton {
+    margin: 15px;
+}
+
+.inner {
+    width: 100%;
+    margin: 15px;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner > div > * {
+    margin: 10px;
+}
