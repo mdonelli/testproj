@@ -7,8 +7,9 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use NumberFormatter;
 
+
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ReceiptRepository")
  * @ORM\Table(name="receipts")
  */
 class Receipt implements JsonConvertible
