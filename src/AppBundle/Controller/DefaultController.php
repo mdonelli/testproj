@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Common\CustomResponse;
 use AppBundle\Entity\Receipt;
 use AppBundle\Service\ReceiptManagementService;
 use AppBundle\Service\StoreManagementService;
@@ -14,15 +15,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends Controller
 {
-    /**
-     * @Route("/", name="homepage")
-     * @return Response
-     */
-    public function indexAction()
-    {
-        // replace this example code with whatever you need
-        return $this->render('receipts.html');
-    }
 
     /**
      * @Route("/receipts", name="get_receipts")
@@ -46,6 +38,13 @@ class DefaultController extends Controller
      */
     public function deleteReceiptAction($id, ReceiptManagementService $receiptMng, Receipt $receipt = null)
     {
+        $request = Request::createFromGlobals();
+
+        if ($request->getMethod() === "OPTIONS") {
+            $response = new CustomResponse(null);
+            return $response;
+        }
+
         if ($receipt === null) {
             throw new \Exception("Receipt with id = " . $id . " not found.");
         }
@@ -56,14 +55,21 @@ class DefaultController extends Controller
     /**
      * @Route("/receipt/{id}", name="post_receipt")
      * @Method({"POST"})
+     * @param $id
      * @param ReceiptManagementService $receiptMng
      * @param Receipt $receipt
      * @return JsonResponse
      */
-    public function receiptAction(ReceiptManagementService $receiptMng, Receipt $receipt = null)
+    public function receiptAction($id, ReceiptManagementService $receiptMng, Receipt $receipt = null)
     {
 
         $request = Request::createFromGlobals();
+
+        if ($request->getMethod() === "OPTIONS") {
+            $response = new CustomResponse(null);
+            return $response;
+        }
+
         $content = json_decode($request->getContent(), true);
 
         if ($receipt === null) {

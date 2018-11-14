@@ -2,6 +2,7 @@
 
 namespace AppBundle\Service;
 
+use AppBundle\Common\CustomResponse;
 use AppBundle\Entity\Article;
 use AppBundle\Entity\Receipt;
 use AppBundle\Entity\Store;
@@ -9,7 +10,6 @@ use DateTime;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\RequestStack;
-use Symfony\Component\HttpFoundation\Response;
 
 class ReceiptManagementService
 {
@@ -58,7 +58,7 @@ class ReceiptManagementService
 
         $data = array("receipts" => $receiptsData, "pageCount" => $pageCount, "page" => $page, "pageSize" => $pageSize);
 
-        return new JsonResponse( $data,Response::HTTP_OK);
+        return new CustomResponse($data);
     }
 
     /**
@@ -70,7 +70,7 @@ class ReceiptManagementService
         $this->em->remove($receipt);
         $this->em->flush();
 
-        return new JsonResponse(true, Response::HTTP_OK);
+        return new CustomResponse(true);
     }
 
     public function saveReceipt(Receipt $receipt, $content)
@@ -106,6 +106,6 @@ class ReceiptManagementService
 
         $this->em->flush();
 
-        return new JsonResponse(true, Response::HTTP_OK);
+        return new CustomResponse(true);
     }
 }

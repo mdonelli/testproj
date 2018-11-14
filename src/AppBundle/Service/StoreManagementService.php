@@ -3,10 +3,9 @@
 namespace AppBundle\Service;
 
 
+use AppBundle\Common\CustomResponse;
 use AppBundle\Entity\Store;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
 
 class StoreManagementService
 {
@@ -17,6 +16,9 @@ class StoreManagementService
         $this->em = $em;
     }
 
+    /**
+     * @return CustomResponse
+     */
     public function loadStores()
     {
         $stores = $this->em->getRepository(Store::class)->findAll();
@@ -25,7 +27,7 @@ class StoreManagementService
             array_push($data, $store->getJSon());
         }
 
-        return new JsonResponse($data, Response::HTTP_OK);
+        return new CustomResponse($data);
     }
 
 }

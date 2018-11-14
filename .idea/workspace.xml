@@ -3,8 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="9008b959-5bd1-4828-9b70-e7de38f6137d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/receipts.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Receipt.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Receipt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/common/Utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/common/react/production/react-dom.production.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/common/react/production/react.production.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/common/react/react-dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/common/react/react.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/common/react/version.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/common/redux/react-redux.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/common/redux/redux.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/components/ArticlesTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/components/CustomButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/components/PagingControl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/components/ReceiptDetails.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/components/ReceiptsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/components/ReceiptsTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/style/style.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,9 +49,9 @@
           <entry key="dist" value="1" />
           <entry key="html" value="4" />
           <entry key="js" value="18" />
-          <entry key="php" value="19" />
+          <entry key="php" value="22" />
           <entry key="twig" value="4" />
-          <entry key="yml" value="5" />
+          <entry key="yml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -42,10 +59,10 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="18" />
-          <entry key="PHP" value="19" />
+          <entry key="PHP" value="22" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Twig" value="4" />
-          <entry key="YAML" value="5" />
+          <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -54,7 +71,8 @@
           <entry key="dummy" value="12" />
           <entry key="html" value="249" />
           <entry key="js" value="13692" />
-          <entry key="php" value="4731" />
+          <entry key="php" value="5023" />
+          <entry key="yml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -62,13 +80,14 @@
           <entry key="CSS" value="678" />
           <entry key="HTML" value="249" />
           <entry key="JavaScript" value="13692" />
-          <entry key="PHP" value="4731" />
+          <entry key="PHP" value="5023" />
           <entry key="PLAIN_TEXT" value="12" />
+          <entry key="YAML" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="4" />
+          <entry key="PHP Class.type" value="5" />
           <entry key="PHP Interface.type" value="1" />
         </counts>
       </usages-collector>
@@ -79,22 +98,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-350">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="638">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
               <folding>
-                <element signature="e#41#70#0#PHP" expanded="true" />
+                <element signature="e#40#76#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="58" lean-forward="true" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+            <state relative-caret-position="396">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
-                <element signature="e#38#65#0#PHP" expanded="true" />
+                <element signature="e#121#171#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,10 +122,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" selection-start-line="16" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="22">
+              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
               <folding>
-                <element signature="e#37#66#0#PHP" expanded="true" />
+                <element signature="e#37#73#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <folding>
+                <element signature="e#38#74#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,6 +193,8 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/ReceiptRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Receipt.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/ReceiptManager.php" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
@@ -218,7 +251,7 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="495" />
     <option name="y" value="54" />
     <option name="width" value="2100" />
@@ -236,6 +269,24 @@
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
@@ -258,28 +309,12 @@
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -340,12 +375,12 @@
       <workItem from="1541734466103" duration="3873000" />
       <workItem from="1541776126823" duration="49401000" />
       <workItem from="1541963162781" duration="28903000" />
-      <workItem from="1542139246466" duration="5669000" />
+      <workItem from="1542139246466" duration="13443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95298000" />
+    <option name="totallyTimeSpent" value="103072000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,7 +400,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299532" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4998012" weight="0.25039002" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4998012" visible="true" weight="0.25039002" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937598" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -386,6 +421,16 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
@@ -545,32 +590,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="e#121#171#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" selection-start-line="16" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="22">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
           <folding>
-            <element signature="e#37#66#0#PHP" expanded="true" />
+            <element signature="e#37#73#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="58" lean-forward="true" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        <state relative-caret-position="154">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding>
-            <element signature="e#38#65#0#PHP" expanded="true" />
+            <element signature="e#38#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="638">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
           <folding>
-            <element signature="e#41#70#0#PHP" expanded="true" />
+            <element signature="e#40#76#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
