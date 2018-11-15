@@ -3,25 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9008b959-5bd1-4828-9b70-e7de38f6137d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/receipts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/Utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/react/production/react-dom.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/react/production/react.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/react/react-dom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/react/react.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/react/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/redux/react-redux.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/redux/redux.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/ArticlesTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/CustomButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/PagingControl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/ReceiptDetails.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/ReceiptsPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/ReceiptsTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/style/style.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +20,11 @@
     <session id="92593307">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.197" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -71,7 +55,7 @@
           <entry key="dummy" value="12" />
           <entry key="html" value="249" />
           <entry key="js" value="13692" />
-          <entry key="php" value="5023" />
+          <entry key="php" value="5466" />
           <entry key="yml" value="21" />
         </counts>
       </usages-collector>
@@ -80,7 +64,7 @@
           <entry key="CSS" value="678" />
           <entry key="HTML" value="249" />
           <entry key="JavaScript" value="13692" />
-          <entry key="PHP" value="5023" />
+          <entry key="PHP" value="5466" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="YAML" value="21" />
         </counts>
@@ -98,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="561">
+              <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
               <folding>
                 <element signature="e#40#76#0#PHP" expanded="true" />
               </folding>
@@ -110,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="484">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="e#121#171#0#PHP" expanded="true" />
               </folding>
@@ -122,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+            <state relative-caret-position="605">
+              <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
               <folding>
                 <element signature="e#37#73#0#PHP" expanded="true" />
               </folding>
@@ -158,6 +142,7 @@
       <find>copyObject</find>
       <find>console.log</find>
       <find>null</find>
+      <find>.catch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,9 +179,9 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Receipt.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/ReceiptManager.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       </list>
     </option>
@@ -251,7 +236,7 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="495" />
     <option name="y" value="54" />
     <option name="width" value="2100" />
@@ -263,6 +248,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,13 +300,19 @@
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,12 +367,13 @@
       <workItem from="1541734466103" duration="3873000" />
       <workItem from="1541776126823" duration="49401000" />
       <workItem from="1541963162781" duration="28903000" />
-      <workItem from="1542139246466" duration="13443000" />
+      <workItem from="1542139246466" duration="14669000" />
+      <workItem from="1542314545768" duration="4885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103072000" />
+    <option name="totallyTimeSpent" value="109183000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,15 +385,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
+    <frame x="-7" y="-7" width="2575" height="1415" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49846625" visible="true" weight="0.10059642" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846625" visible="true" weight="0.10139165" />
       <window_info id="Structure" order="1" sideWeight="0.50153375" side_tool="true" weight="0.18880597" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299532" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4998012" visible="true" weight="0.25039002" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4998012" visible="true" weight="0.25039002" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937598" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -485,9 +478,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/common/react/react.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/common/react/react.js" />
     <entry file="file://$PROJECT_DIR$/web/components/Table.js" />
     <entry file="file://$PROJECT_DIR$/web/components/Row.js" />
     <entry file="file://$PROJECT_DIR$/web/components/ReceiptArticlesPage.js" />
@@ -510,76 +501,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/common/Utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1958">
-          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/receipts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/components/ReceiptsTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/components/ReceiptDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/components/PagingControl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/components/CustomButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/components/ArticlesTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="52" column="61" lean-forward="true" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/components/ReceiptsPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
-          <caret line="85" column="77" selection-start-line="85" selection-start-column="77" selection-end-line="85" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/common/Utils.js" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/receipts.html" />
+    <entry file="file://$PROJECT_DIR$/web/style/style.css" />
+    <entry file="file://$PROJECT_DIR$/web/components/ReceiptsTable.js" />
+    <entry file="file://$PROJECT_DIR$/web/components/ReceiptDetails.js" />
+    <entry file="file://$PROJECT_DIR$/web/components/PagingControl.js" />
+    <entry file="file://$PROJECT_DIR$/web/components/CustomButton.js" />
+    <entry file="file://$PROJECT_DIR$/web/components/ArticlesTable.js" />
+    <entry file="file://$PROJECT_DIR$/web/components/ReceiptsPage.js" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Receipt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="e#36#73#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -597,26 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="e#121#171#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding>
-            <element signature="e#37#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/StoreManagementService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -627,10 +541,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Common/CustomResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#121#171#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/ReceiptManagementService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+          <folding>
+            <element signature="e#37#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="561">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
           <folding>
             <element signature="e#40#76#0#PHP" expanded="true" />
           </folding>

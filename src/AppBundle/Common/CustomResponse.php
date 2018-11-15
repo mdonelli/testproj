@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class CustomResponse extends JsonResponse
 {
-    public function __construct($data = null)
+    public function __construct($data = null, $success = true)
     {
         $headers = array(
             'Access-Control-Allow-Origin' => 'http://localhost:8080',
@@ -23,6 +23,6 @@ class CustomResponse extends JsonResponse
             "Access-Control-Allow-Headers"=> "Access-Control-Allow-Headers, Origin, Authorization, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
         );
 
-        parent::__construct($data, Response::HTTP_OK, $headers, false);
+        parent::__construct($data, $success == true ? Response::HTTP_OK : Response::HTTP_INTERNAL_SERVER_ERROR, $headers, false);
     }
 }

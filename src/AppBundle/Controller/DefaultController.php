@@ -10,7 +10,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends Controller
@@ -20,36 +19,24 @@ class DefaultController extends Controller
      * @Route("/receipts", name="get_receipts")
      * @Method({"GET"})
      * @param ReceiptManagementService $receiptMng
+     * @param Request $request
      * @return JsonResponse
      */
-    public function receiptsAction(ReceiptManagementService $receiptMng)
+    public function receiptsAction(ReceiptManagementService $receiptMng, Request $request)
     {
-        return $receiptMng->loadReceipts();
-    }
-
-    /**
-     * @Route("/receipt/delete/{id}", name="delete_receipt")
-     * @Method({"GET"})
-     * @param $id
-     * @param Receipt $receipt
-     * @param ReceiptManagementService $receiptMng
-     * @return JsonResponse
-     * @throws \Exception
-     */
-    public function deleteReceiptAction($id, ReceiptManagementService $receiptMng, Receipt $receipt = null)
-    {
-        $request = Request::createFromGlobals();
 
         if ($request->getMethod() === "OPTIONS") {
-            $response = new CustomResponse(null);
-            return $response;
+            return new CustomResponse(null);
         }
 
-        if ($receipt === null) {
-            throw new \Exception("Receipt with id = " . $id . " not found.");
+        try
+        {
+            return $receiptMng->loadReceipts();
         }
-
-        return $receiptMng->deleteReceipt($receipt);
+        catch (\Exception $e)
+        {
+            return new CustomResponse($e->getMessage(), false);
+        }
     }
 
     /**
@@ -57,37 +44,69 @@ class DefaultController extends Controller
      * @Method({"POST"})
      * @param $id
      * @param ReceiptManagementService $receiptMng
+     * @param Request $request
      * @param Receipt $receipt
      * @return JsonResponse
      */
-    public function receiptAction($id, ReceiptManagementService $receiptMng, Receipt $receipt = null)
+    public function receiptAction($id, ReceiptManagementService $receiptMng, Request $request, Receipt $receipt = null)
     {
 
-        $request = Request::createFromGlobals();
-
         if ($request->getMethod() === "OPTIONS") {
-            $response = new CustomResponse(null);
-            return $response;
+            return new CustomResponse(null);
         }
 
-        $content = json_decode($request->getContent(), true);
+        try
+        {
 
-        if ($receipt === null) {
-            $receipt = new Receipt();
+            $content = json_decode($request->getContent(), true);
+
+            switch ($content["action"]) {
+
+                case "save":
+                    if ($receipt === null && $id !== "null") {
+                        throw new \Exception("Receipt with id = " . $id . " not found.");
+                    }
+                    return $receiptMng->saveReceipt($receipt === null ? new Receipt() : $receipt, $content["receipt"]);
+
+                case "delete":
+                    if ($receipt === null) {
+                        throw new \Exception("Receipt with id = " . $id . " not found.");
+                    }
+                    return $receiptMng->deleteReceipt($receipt);
+
+                default:
+                    throw new \Exception("Unknown action: " .$content["action"]);
+            }
+
+        }
+        catch (\Exception $e)
+        {
+            return new CustomResponse($e->getMessage(), false);
         }
 
-        return $receiptMng->saveReceipt($receipt, $content);
     }
 
     /**
      * @Route("/stores", name="get_stores")
      * @Method({"GET"})
      * @param StoreManagementService $storeMng
+     * @param Request $request
      * @return JsonResponse
      */
-    public function storesAction(StoreManagementService $storeMng)
+    public function storesAction(StoreManagementService $storeMng, Request $request)
     {
-        return $storeMng->loadStores();
+        if ($request->getMethod() === "OPTIONS") {
+            return new CustomResponse(null);
+        }
+
+        try
+        {
+            return $storeMng->loadStores();
+        }
+        catch (\Exception $e)
+        {
+            return new CustomResponse($e->getMessage(), false);
+        }
     }
 
 }

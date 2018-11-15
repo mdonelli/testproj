@@ -41,6 +41,8 @@ class ReceiptManagementService
 
         if ($page > $pageCount) {
             $page = $pageCount;
+        } else if ($page == 0) {
+            $page = 1;
         }
 
         $receipts = $repository->createQueryBuilder('r')
@@ -73,6 +75,11 @@ class ReceiptManagementService
         return new CustomResponse(true);
     }
 
+    /**
+     * @param Receipt $receipt
+     * @param $content
+     * @return CustomResponse
+     */
     public function saveReceipt(Receipt $receipt, $content)
     {
 
